@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/usr/share/java/spring3-web.servlet.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/servlet-api.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/spring3-context.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/spring3-core.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/junit.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/spring3-web.jar"/>
+	<classpathentry kind="lib" path="/usr/share/java/spring3-beans.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
