@@ -1,4 +1,4 @@
-package springconversio.web;
+package springconversio.service;
 
 import springconversio.service.Romanizer;
 import junit.framework.TestCase;

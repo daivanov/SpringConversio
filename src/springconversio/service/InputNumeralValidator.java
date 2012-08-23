@@ -33,14 +33,17 @@ public class InputNumeralValidator implements Validator {
             	Integer number = Integer.valueOf(in.getNumeral());
                 logger.info("Validating " + in.getNumeral());
                 if (number <= DEFAULT_MIN_VALUE) {
+                	logger.info("error.too-low");
                     errors.rejectValue("numeral", "error.too-low",
                         new Object[] {new Integer(DEFAULT_MIN_VALUE)}, "Value too low.");
                 }
                 if (number > DEFAULT_MAX_VALUE) {
+                	logger.info("error.too-high");
                     errors.rejectValue("numeral", "error.too-high",
                         new Object[] {new Integer(DEFAULT_MAX_VALUE)}, "Value too high.");
                 }
             } catch (NumberFormatException e) {
+            	logger.info("error.not-digit");
                 errors.rejectValue("numeral", "error.not-digit", null, "Value required.");
             }
         }
