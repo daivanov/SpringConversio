@@ -6,6 +6,7 @@ import springconversio.domain.InputNumeral;
 import springconversio.domain.Pair;
 
 import springconversio.service.ConversionService;
+import springconversio.service.InputNumeralValidator;
 
 import org.springframework.ui.ModelMap;
 import org.springframework.stereotype.Controller;
@@ -29,9 +30,16 @@ public class WebController {
 	private ConversionService conversionService;
 
 	@Autowired
-	public void setUserService(ConversionService conversionService) {
+	public void setConversionService(ConversionService conversionService) {
 		this.conversionService = conversionService;
 	}
+	
+	private InputNumeralValidator inputNumeralValidator;
+
+	@Autowired
+    private void setInputNumeralValidator(InputNumeralValidator inputNumeralValidator) {
+        this.inputNumeralValidator = inputNumeralValidator;
+    }
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public String showConversionForm(ModelMap model) {

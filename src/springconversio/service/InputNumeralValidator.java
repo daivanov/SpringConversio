@@ -1,12 +1,17 @@
-package springconversio.domain;
+package springconversio.service;
 
 import org.springframework.validation.Validator;
 import org.springframework.validation.Errors;
 
+import org.springframework.stereotype.Component;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import springconversio.domain.InputNumeral;
 
+
+@Component
 public class InputNumeralValidator implements Validator {
     private int DEFAULT_MIN_VALUE = 1;
     private int DEFAULT_MAX_VALUE = 3000;

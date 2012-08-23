@@ -20,6 +20,7 @@
 	p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" />
 
   <bean id="conversionService" class="springconversio.service.ConversionServiceImpl" />
+  <bean id="inputNumeralValidator" class="springconversio.service.InputNumeralValidator" />
 
   <context:component-scan base-package="springconversio.web" />
 
