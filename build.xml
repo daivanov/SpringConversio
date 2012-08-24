@@ -58,6 +58,16 @@
                 <include name="**/*.*"/>
             </fileset>
         </copy>
+        <copy todir="${deploy.path}/${name}/WEB-INF/classes" preservelastmodified="true">
+        	<fileset dir="${src.dir}">
+    	      <include name="**/*.xml" />
+    	   </fileset>
+    	</copy>
+        <copy todir="${deploy.path}/${name}/WEB-INF/classes" preservelastmodified="true">
+        	<fileset dir="${src.dir}">
+    	      <include name="**/numerals.*" />
+    	   </fileset>
+    	</copy>
     </target>
 
     <target name="deploywar" depends="build" description="Deploy application as a WAR file">

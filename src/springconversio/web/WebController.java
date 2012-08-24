@@ -45,7 +45,7 @@ public class WebController {
 	public String showConversionForm(ModelMap model) {
 		InputNumeral numeral = new InputNumeral();
 		model.addAttribute(numeral);
-		List<Pair<String,String>> history = conversionService.fetch();
+		List<Pair<String,String>> history = conversionService.fetchNumerals();
 		model.addAttribute("history", history);
 		logger.info("GET " + numeral.getNumeral());
 		return "convert";

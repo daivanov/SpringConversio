@@ -9,5 +9,5 @@ public interface ConversionService {
 
 	public void convert(InputNumeral numeral);
 
-	public List<Pair<String,String>> fetch();
+	public List<Pair<String,String>> fetchNumerals();
 }
