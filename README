@@ -1,2 +1,27 @@
 Web application with Spring performing coversion from decimal to roman and saving
 data into the database using Hibernate
+
+The project requires following JARs to be added:
+antlr.jar
+asm3-commons.jar
+asm3.jar
+commons-collections.jar
+commons-logging.jar
+dom4j.jar
+geronimo-jpa-2.0-spec.jar
+geronimo-jta-1.0.1b-spec.jar
+hibernate3.jar
+hibernate-commons-annotations.jar
+hsqldb.jar
+javassist.jar
+jstl-1.2.jar
+junit.jar
+slf4j-api.jar
+slf4j-simple.jar
+spring3-beans.jar
+spring3-context.jar
+spring3-core.jar
+spring3-expression.jar
+spring3-web-3.x.jar
+spring3-web.servlet-3.x.jar
+
